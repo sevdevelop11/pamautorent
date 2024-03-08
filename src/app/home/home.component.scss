@@ -1,0 +1,72 @@
+.background {
+    background-image: url("/assets/images/bg.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+
+    /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.box-title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    margin: 3.5rem 0;
+
+    h1 {
+        font-size: 68px;
+    }
+
+    h3 {
+        color: white;
+    }
+}
+
+.main {
+    position: absolute;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+}
+
+.box-item {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 7px 4px 26px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 4px 26px -5px rgba(0,0,0,0.75);
+    box-shadow: 7px 4px 26px -5px rgba(0,0,0,0.75);
+
+    .box-image {
+        background-image: url('/assets/images/autocaravana.webp');
+        background-position: center;
+        background-size: cover;
+        height: 85%;
+    }
+
+    .box-text {
+        background-color: white;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
